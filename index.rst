@@ -1,30 +1,38 @@
-.. title:: Introduction to Nutanix AHV
+.. title:: Delivering Nutanix Demos
 
 .. toctree::
   :maxdepth: 2
-  :caption: Labs
-  :name: _labs
+  :caption: Starting Point
+  :name: _start
   :hidden:
 
-  examplelab1/examplelab1
-  examplelab2/examplelab2
+  overview/overview
 
 .. toctree::
   :maxdepth: 2
-  :caption: Optional Labs
-  :name: _optional_labs
+  :caption: Prism Central Demos
+  :name: _pc
   :hidden:
 
-  examplelab3/examplelab3
+  dashboards/dashboards
+  capacityplanning/capacityplanning
+  ahvvm/ahvvm
+  esxicrud/esxicrud
+  flowisolation/flowisolation
+  calm/calm
+  api/api
 
 .. toctree::
   :maxdepth: 2
-  :caption: Appendix
-  :name: _appendix
+  :caption: Prism Element Demos
+  :name: _pe
   :hidden:
 
-  appendix/glossary
-  appendix/otherstuff
+  expand/expand
+  upgrade/upgrade
+  storage/storage
+  protectiondomains/protectiondomains
+
 
 .. _getting_started:
 
@@ -32,46 +40,75 @@
 Getting Started
 ---------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit odio, ultrices sed elementum vitae, dictum eget turpis. Etiam ultrices orci quis tempus tempus. Nulla non nibh imperdiet, suscipit risus quis, eleifend nisl. Morbi at posuere nibh, quis bibendum dui. Morbi dictum sem a ipsum bibendum condimentum. Suspendisse id ante gravida, efficitur leo a, consequat enim. Suspendisse tempor lorem vel purus scelerisque, vel facilisis lorem consequat. Pellentesque augue orci, iaculis vel mollis sit amet, scelerisque a tellus. Aliquam commodo in lectus feugiat porta.
+This Workshop contains multiple examples of Nutanix demos that can be delivered via the Nutanix Demos on Demand site.
+
+**The materials provided in this Workshop are designed to work as a guide for assisting new Nutanix sellers develop familiarity with Nutanix demo techniques. It is not an exhaustive guide, nor does it represent the ONLY way to demo Nutanix features and value.**
+
+The Nutanix Demo site can be accessed by Nutanix Employees and Partners at https://demo.nutanix.com. Use your **my.nutanix.com** credentials to login. No VPN is required.
+
+The site provides the ability to deliver **non-destructive** Prism demos at any time.
+
+.. figure:: images/1.png
+
+Currently the Demo site provides shared access to 6 Nutanix clusters:
+
+- 1x NX Cluster running AHV (registered with Prism Central)
+- 1x NX Cluster running ESXi (registered with Prism Central)
+- 1x NX Cluster running Hyper-V
+- 1x Dell XC Cluster running ESXi
+- 1x Cisco UCS Cluster running AHV
+- 1x HPE Cluster running AHV
 
 What's New
 ++++++++++
 
-- Workshop updated for the following software versions:
-  - AOS 5.6
-  - AFS 3.0
-- Added :ref:`example_lab_3`
+Initial revision based on the PC 5.6/AOS 5.6 demo site with examples of the following:
 
-Access Instructions
-+++++++++++++++++++
+- Dashboard Overview
+- Custom Dashboards
+- Cluster Expansion
+- One Click Upgrades
+- Storage Container Provisioning
+- VM Creation and Cloning
+- ESXi CRUD Management
+- Prism Pro Capacity Planning
+- Protecting VMs
+- Isolating VMs with Flow
+- Calm
+- Prism Central API Explorer
 
-The Nutanix Hosted POC environment can be accessed a number of different ways:
+Restrictions
+++++++++++++
 
-Citrix XenDesktop
-.................
+As the Demo site is a shared environment being used by multiple users simultaneously, there are certain restrictions on actions you are able to perform, including but not limited to:
 
-https://citrixready.nutanix.com - *Accessible via the Citrix Receiver client or HTML5*
+- Fully executing a cluster expand operation
+- Fully executing a One Click upgrade operation
+- Removing a node from the cluster
+- Node power operations
+- Modifying cluster info (name, IPs, Prism banner settings, etc.)
+- Modifying the default Prism Central project or Calm Blueprints
+- Deleting VMs/Networks/Protection Domains/etc.
+- Accessing vCenter/SCVMM
+- Large cloning operations (currently limited to 15 clones in a single operation)
 
-**Nutanix Employees** - Use your NUTANIXDC credentials
+Additionally, VMs, Networks, Protection Domains, etc. created during demos are deleted within 15 minutes of your session expiring.
 
-**Non-Employees** - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
+Due to these restrictions, the Demo site is not an ideal platform for delivering in depth Workload focused demos that would require prior staging (e.g. Citrix, Splunk, X-Ray, etc.). For advanced demo requirements, please reserve a Nutanix Hosted POC cluster.
 
-Employee Pulse Secure VPN
-..........................
+Best Practices
+++++++++++++++
 
-https://sslvpn.nutanix.com - Use your CORP credentials
+Know your audience! Slamming a prospect's existing storage in front of a storage administrator is generally a bad idea.
 
-Non-Employee Pulse Secure VPN
-..............................
+Demos are not training or complete explanations of how to administrate the platform, the goal is to highlight platform value (ease of use, flexibility, benefits of a fully integrated stack, etc.) as it relates to customer pain points or business objectives.
 
-https://lab-vpn.nutanix.com - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
+A typical quick product demo at the end of a 1st or 2nd meeting with a prospect should only focus on the top 2-3 feature areas you feel best highlight Nutanix value in that situation. Do not attempt to demo every feature detailed in this Workshop.
 
-Under **Client Application Sessions**, click **Start** to the right of **Pulse Secure** to download the client.
+Be cautious of frequently hopping back and forth between Prism Central and Prism Element.
 
-Install and open **Pulse Secure**.
+The Demo launch page gives you an additional opportunity to speak to hypervisor and hardware choice prior to beginning the Prism demo.
 
-Add a connection:
+On the Demo launch page, clicking :fa:`cog` **> Configure View** allows you to hide hypervisor/hardware options. This can be helpful when you're brought into a meeting by a particular OEM and choose to hide certain platform options as a courtesy.
 
-- **Type** - Policy Secure (UAC) or Connection Server
-- **Name** - HPOC VPN
-- **Server URL** - lab-vpn.nutanix.com
+If presenting on a projector, consider increasing the contrast within Prism to make the demo more easily visible. To adjust contrast, hold the Shift key and click **Admin > Adjust Contrast > High** from the Prism toolbar. This feature is only supported in Google Chrome.
