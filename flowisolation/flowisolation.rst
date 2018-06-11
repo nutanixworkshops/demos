@@ -7,9 +7,9 @@ Isolating Environments with Flow
 Overview
 ++++++++
 
-A quick demo of the API Explorer can be powerful for the appropriate audience. The standard Prism overview demonstrates that Nutanix management is based on modern web standards and doesn't rely on legacy frameworks (Flash, Java). The API demo shows the prospect's ability to integrate our management with virtually any other workflow or application via REST.
+A quick demo of the Flow Isolation Policies can be powerful for the appropriate audience. The easy ability to show how to setup Categories, Isolation Polices, and applying them both to VM(s) is highlights Nutanix's commitment to easy management and operations.
 
-This demo is performed from the Prism Central interface. Triggers for this demo include prospects looking to unify and automate their management tools.
+This demo is performed from the Prism Central interface. Triggers for this demo include prospects looking to secure their VMs (possibly own or looking at NSX or ACI).
 
 Demo Script
 +++++++++++
