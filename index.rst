@@ -15,9 +15,9 @@
   :hidden:
 
   dashboards/dashboards
-  capacityplanning/capacityplanning
+..  capacityplanning/capacityplanning
   ahvvm/ahvvm
-  esxicrud/esxicrud
+..  esxicrud/esxicrud
   flowisolation/flowisolation
   calm/calm
   api/api
