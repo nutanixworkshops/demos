@@ -27,6 +27,8 @@ Fill out the following fields and click **Save**:
 - **Values** - Prod
 - **Values** - Test
 
+.. figure:: images/flowisolation_01.png
+
 *Now that we have created a Category for our Sales Application, we can create a Security Policy.*
 
 Navigate to **Explore > Security Policies**, and click **Create Security Policy > Isolate Environments**.
@@ -42,7 +44,6 @@ Do NOT select the check box for **Apply the isolation only within a subset of th
 
 .. note::
   The Save and Monitor button allows you to save the configuration and monitor how the security policy works without applying it.
-
 
 .. figure:: images/flowisolation_02.png
 
