@@ -15,7 +15,7 @@ On the Demo site you are restricted from completing the cluster expansion workfl
 
 .. raw:: html
 
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/qUvErKsLPYk?rel=0&amp;showinfo=0&amp;vq=hd1080" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/qg0vU48d5XA?rel=0&amp;showinfo=0&amp;vq=hd1080" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Demo Script
 +++++++++++

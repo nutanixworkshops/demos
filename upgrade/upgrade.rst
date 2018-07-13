@@ -9,13 +9,13 @@ Overview
 
 Performing a One Click Upgrade demo provides the opportunity to highlight simplified and automated operations with Nutanix, and also to highlight the maturity of the solution. Nutanix takes a full stack approach, where its not enough to provide customer delight around updating our software features, we also need to address things like 3rd party hypervisors and device firmware. The other critical value not to overlook in discussing One Click upgrades is the ability to quickly and easily take advantage of new platform enhancements.
 
-This demo is performed from the Prism Element interface of an individual cluster. Triggers for this demo can include prospects on legacy, non-SDS storage platforms, or platforms with difficult and time consuming upgrade paths like vBlocks, or even vSphere. 
+This demo is performed from the Prism Element interface of an individual cluster. Triggers for this demo can include prospects on legacy, non-SDS storage platforms, or platforms with difficult and time consuming upgrade paths like vBlocks, or even vSphere.
 
 On the Demo site you are restricted from executing a One Click upgrade workflow. If you wish to show an example of the entire end to end process and do not have a dedicated cluster available, use the following pre-recorded example:
 
 .. raw:: html
 
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/RT3m72mi2-k?rel=0&amp;showinfo=0&amp;vq=hd1080" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/_dzyaWbRkAQ?rel=0&amp;showinfo=0&amp;vq=hd1080" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Demo Script
 +++++++++++
